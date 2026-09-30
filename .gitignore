@@ -1,0 +1,22 @@
+# Secrets / credentials
+.env
+*.pem
+*.key
+credentials
+credentials.json
+secrets/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!example.tfvars
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Runtime outputs
+*.log
