@@ -87,3 +87,29 @@ Before proceeding to database deployment:
 | Internet Gateway | igw-041f9598defa6f10a |
 | Public Route Tabel | rtb-0edce5bfaff707fa4 | 
 | Private Route Table |rtb-03e4b18414c0b80d3 |
+
+
+
+## Deployed Resource IDs
+
+| Resource | ID |
+|---|---|
+| VPC | vpc-0bab9fddf9954abcf |
+| Public Subnet AZ-A | subnet-0064f04d4fe4430d6 |
+| Public Subnet AZ-B | subnet-06a888ee433b9abef |
+| Private Subnet AZ-A | subnet-0d211e7f2dc9f93eb |
+| Private Subnet AZ-B | subnet-0a4c67beb83a88521 |
+| Internet Gateway | igw-041f9598defa6f10a |
+| Public Route Table | rtb-0edce5bfaff707fa4 |
+| Private Route Table AZ-A | rtb-03e4b18414c0b80d3 |
+| Private Route Table AZ-B | rtb-0ab1a184865979ef4 |
+
+
+## Actual Subnet Mapping
+
+| Subnet | CIDR | AZ | Role |
+|---|---|---|---|
+| subnet-0064f04d4fe4430d6 | 10.20.1.0/24 | ap-southeast-2a | Public / Source EC2 |
+| subnet-06a888ee433b9abef | 10.20.2.0/24 | ap-southeast-2b | Public / Reserved |
+| subnet-0d211e7f2dc9f93eb | 10.20.11.0/24 | ap-southeast-2a | Private / RDS + DMS |
+| subnet-0a4c67beb83a88521 | 10.20.12.0/24 | ap-southeast-2b | Private / RDS + DMS |
